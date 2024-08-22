@@ -1,6 +1,49 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v2023.12.1] - 2023-12-19
+
+### Added
+
+- Added MQTT alert message/event when retried commands fail.
+
+## [v2023.12.0] - 2023-12-17
+
+### Added
+
+- Added automatic retry when the Que gateway times out on new commands/changes. Any failed command should now be retried 2 - 3 times.
+
+### Changed
+
+- Upgraded base images to .NET 8.
+
+## [v2023.11.3] - 2023-11-13
+
+### Changed
+
+- Fixed a bug causing the Control All Zones to not always be turned on upon temperature change.
+
+## [v2023.11.2] - 2023-11-12
+
+### Added
+
+- Added entities to support the Control All Zones setting on the Actron Que.
+- Sets Control All Zones to True automatically when the master unit temperature is adjusted.
+ 
+### Removed
+
+- Removing support for i386 and armhf architectures as they are no longer supported by Microsoft (.NET). The previous versions of the add-on will continue to work, however they will no longer receive updates.
+
+## [v2023.11.1] - 2023-11-10
+
+### Added
+
+- Added a new configuration option to enable the new HVAC/Climate options in HA 2023.9 (setting the target heating and cooling temperatures independently).
+
+### Changed
+
+- Changed base images to Alpine from Debian to match the HA base images.
+
 ## [v2023.4.0] - 2023-04-30
 
 ### Changed

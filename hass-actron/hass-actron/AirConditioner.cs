@@ -76,8 +76,7 @@ namespace HMX.HASSActron
 				else
 					MQTT.SendMessage(string.Format("{0}/status", unit.ClientId), "online");
 			}
-		}
-		
+		}		
 
 		public static bool Configure(IConfigurationRoot configuration)
 		{
@@ -119,7 +118,7 @@ namespace HMX.HASSActron
 
 			lock (_oLockData)
 			{
-				_airConditionerData.dtLastUpdate = DateTime.MinValue;
+				_airConditionerData.dtLastUpdate = DateTime.Now;
 			}
 
 			try

@@ -1,12 +1,10 @@
 ﻿
 Look for event driven notification/http long poll options for AC state change notifications.
 
-enable set temperature to adjust temp range when in auto mode
-
 auth interval faster if miss initial auth
 
 suppress updates post change?
 
-
-
 command ack pending should be per unit
+
+Add option to reduce mqtt logging (actron addon)
